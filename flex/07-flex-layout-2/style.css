@@ -8,22 +8,50 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  align-content: center;
+  font-weight: 900;
+  font-size: 32px;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  padding: 16px;
+  flex-shrink: 0;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  gap: 16px;
+  padding: 16px;
+  width: 300px;
+}
+
+.container{
+  display: flex;
+}
+
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 48px;
+  gap: 32px;
+  grid-column: 3;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
 }
